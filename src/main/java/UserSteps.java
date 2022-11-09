@@ -1,9 +1,9 @@
-import model.UserRequestModel;
-public class STEPUser {
+import model.CreateUserResponse;
+public class UserSteps {
     APIUser apiUser = new APIUser();
 
     public void createUser(String name, String job) {
-        UserRequestModel model = new UserRequestModel(name,job);
+        CreateUserResponse model = new CreateUserResponse(name, job);
         apiUser.createUser(model);
     }
 }

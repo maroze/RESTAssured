@@ -1,9 +1,9 @@
 import io.restassured.http.ContentType;
-import model.UserRequestModel;
+import model.CreateUserResponse;
 import io.restassured.RestAssured;
 
 public class APIUser {
-    public void createUser(UserRequestModel model) {
+    public void createUser(CreateUserResponse model) {
         RestAssured.given()
                 .baseUri("https://reqres.in/api")
                 .contentType(ContentType.JSON)

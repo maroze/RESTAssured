@@ -1,9 +1,13 @@
 import org.testng.annotations.Test;
 
+
 public class RestAPI {
-    STEPUser stepUser = new STEPUser();
+    UserSteps userSteps = new UserSteps();
+
+    public String name = "olya";
+    public String job = "pharmacist";
     @Test
     public void testPost(){
-        stepUser.createUser("olya","pharmacist");
+        userSteps.createUser(name,job);
     }
 }
